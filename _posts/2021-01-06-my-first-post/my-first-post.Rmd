@@ -78,7 +78,7 @@ Notice that beside quality and type, the rest of the variables are numerical and
 
 In the figure below, multiple histograms are plottted to reveal the distribution of the selected variables in the wine quality data sets.  
 
-```{r, echo=FALSE, message=FALSE, fig.width=12, fig.height=6}
+```{r, echo=FALSE, message=FALSE, layout="l-body-outset", fig.width=12, fig.height=6}
 fa <- ggplot(data=wine, aes(x= `fixed acidity`)) +
   geom_histogram(bins=20, color="black", fill="light blue")
 va <- ggplot(data=wine, aes(x= `volatile acidity`)) +
